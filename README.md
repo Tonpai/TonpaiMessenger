@@ -4,12 +4,11 @@ Tonpai Chat includes server and client for chat application on website. The appl
 ## **How to run application**
 1. Install NodeJS
 2. Route command line path to project directory
-3. Run `node index.js` for start server
+3. Run `npm start` for start server
 4. Click in `client.html` for run client on browser
 
 ## **TODO**
 - Build new client UI
-- Update `npm start` for run application
 - Date/Time in bubble chat
 - User's authentication
 - Database system
