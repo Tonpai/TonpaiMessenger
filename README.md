@@ -19,9 +19,6 @@ Tonpai Chat includes server and client for chat application on website. The appl
 4. Browse `http://localhost:3000/` for join chat page
 
 ## **TODO**
-- Study how to build MongoDB scheme in JS
-- Login Page
-- Register Page
 - User's authentication
 - Build new client UI
 - Database system
