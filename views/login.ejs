@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include the above in your HEAD tag -->
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Tonpai Instant Messenging - เข้าสู่ระบบ</title>
 </head>
-<body>
-    <div>
-        <div><h1>Tonpai Messenger:​ Login</h1></div>
-        <div>
-            <form action="/login" method="post">
-                <input id="username" name="username" type="text" placeholder="ชื่อผู้ใช้"/>
-                <input id="password" name="password" type="password" placeholder="รหัสผ่าน"/>
-                <input value="เข้าสู่ระบบ" type="submit"/>
-            </form>
-        </div>
+<div class="main">
+    <div class="container">
+        <center>
+            <div class="middle">
+                <div id="login">
+
+                    <form action="login" method="POST">
+
+                        <fieldset class="clearfix">
+
+                            <p><span class="fa fa-user"></span><input name="username" type="text" Placeholder="ชื่อผู้ใช้" required></p>
+                            <!-- JS because of IE support; better: placeholder="Username" -->
+                            <p><span class="fa fa-lock"></span><input name="password" type="password" Placeholder="รหัสผ่าน" required>
+                            </p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+                            <div>
+                                
+                                <div style="text-align:left;width:48%; display: inline-block;">
+                                    <span style="display: inline-block; padding:5px;">
+                                        <a href="#">ลืมรหัสผ่าน?</a></span>
+                                    <span style="display: inline-block; padding:5px;">
+                                        <a href="register">สมัครสมาชิก</a></span>
+                                </div>
+                                <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit"
+                                        value="เข้าสู่ระบบ"></span>
+                            </div>
+
+                        </fieldset>
+                        <div class="clearfix"></div>
+                    </form>
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end login -->
+                <div class="logo">Tonpai
+
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </center>
     </div>
+</div>
 </body>
 </html>

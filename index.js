@@ -9,6 +9,7 @@ const app = express();
 const port = 3000;
 
 app.set('view engine', 'ejs');
+app.use(express.static('public')); // set 'public' to be public static directory
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -40,7 +41,16 @@ passport.use(new LocalStrategy(
 // GET method route
 app.get('/', function (req, res) {
     // res.sendFile(path.join(__dirname + '/client.html'));
-    res.render('login');
+    res.render('chat');
+});
+
+app.get('/register', function(req, res){
+    res.render('register');
+})
+
+app.post('/register', function(req, res){
+    // Register logic
+    res.redirect('/');
 });
 
 app.get('/about', function(req, res) {
@@ -62,6 +72,7 @@ app.get(
 );
 
 app.listen(port, () => {
+    console.log('Tonpai Messenger Server started.');
     console.log(`Webserver listening at: ${port}`);
 })
 
